@@ -1,0 +1,21 @@
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 164px 0;
+}
+
+@media (max-width: 730px) {
+    .header {
+        margin: 28px 16px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__area {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

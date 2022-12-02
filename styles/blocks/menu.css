@@ -1,0 +1,108 @@
+/* Menu */
+
+@media (max-width: 375px) {
+    .menu {
+        width: 60%;
+        height: 100vh;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 1s;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .menu_open {
+        transform: translateX(0%);
+    }
+}
+
+/* Button */
+
+.menu__button {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .menu__button {
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        justify-self: end;
+        z-index: 2;
+        cursor: pointer;
+        transition: opacity .5s;
+    }
+
+    .menu__button:hover {
+        opacity: .6;
+    }
+}
+
+/* Icon */
+
+@media (max-width: 375px) {
+    .menu__icon-menu,
+    .menu__button_open .menu__icon-cross {
+        display: block;
+    }
+
+    .menu__icon-cross,
+    .menu__button_open .menu__icon-menu {
+        display: none;
+    }
+}
+
+/* List */
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 575px) {
+    .menu__list {
+        display: block;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .menu__list {
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+}
+
+/* Item */
+.menu__item {
+    margin: 0 40px 0 0;
+}
+
+.menu__item:last-of-type {
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    .menu__item {
+        margin: 0 0 35px 0;
+    }
+}
+
+/* Link */
+
+.menu__link {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    transition: color .5s;
+}
+
+.menu__link:hover {
+    color: hsl(35, 77%, 62%);
+}

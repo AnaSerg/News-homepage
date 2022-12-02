@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import 'fonts.css';
+
+@import url(./blocks/page.css);
+@import url(./blocks/header.css);
+@import url(./blocks/logo.css);
+@import url(./blocks/menu.css);
+
+/*
+.header__menu-item {
+    margin-right: 40px;
+}
+
+.header__menu-item:last-of-type {
+    margin-right: 0;
+} */

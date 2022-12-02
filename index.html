@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body class="page">
     <div class="page__container">
         <header class="header">
-            <img src="./images/logo.svg" alt="logo" class="header__logo">
-            <nav class="nav">
-                <ul class="header__menu">
-                    <li class="header__menu-item">Home</li>
-                    <li class="header__menu-item">New</li>
-                    <li class="header__menu-item">Popular</li>
-                    <li class="header__menu-item">Trending</li>
-                    <li class="header__menu-item">Categories</li>
+            <div class="header__area">
+                <img src="./images/logo.svg" alt="logo" class="logo">
+                <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                    <svg class="menu__icon" aria-hidden="true" width="32px" height="32px">
+                        <use class="menu__icon-menu" href="./images/sprite.svg#menu"></use>
+                        <use class="menu__icon-cross" href="./images/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list" id="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">New</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Popular</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Trending</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Categories</a>
+                    </li>
                 </ul>
             </nav>
         </header>
     </div>
+    <script src="/index.js"></script>
 </body>
 </html>
